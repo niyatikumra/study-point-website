@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Register Now - Study Point</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md py-4 px-6 flex items-center justify-between fixed top-0 left-0 w-full z-50">
+    <h2 class="text-2xl font-bold text-black">Register Now</h2>
+    <div class="flex space-x-4">
+      <a href="index.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 text-lg font-medium">Home</a>
+      <a href="index.html#register" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 text-lg font-medium">Register Now</a>
+    </div>
+   
+  </nav>
+
+  <!-- Main Form Section -->
+  <section class="pt-28 px-4 md:px-20 pb-16">
+    <h2 class="text-3xl font-bold text-center mb-10 text-blue-700">Student Registration Form</h2>
+
+    <form action="https://formsubmit.co/studypoint2502@gmail.com" method="POST" class="max-w-2xl mx-auto bg-white p-8 shadow-lg rounded-lg space-y-6">
+
+      <!-- Name -->
+      <div>
+        <label for="name" class="block font-medium text-gray-700 mb-1">Student Name</label>
+        <input type="text" id="name" name="name" required class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <!-- Parent Name -->
+      <div>
+        <label for="parent" class="block font-medium text-gray-700 mb-1">Parent/Guardian Name</label>
+        <input type="text" id="parent" name="parent" required class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <!-- Phone -->
+      <div>
+        <label for="phone" class="block font-medium text-gray-700 mb-1">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <!-- Class -->
+      <div>
+        <label for="class" class="block font-medium text-gray-700 mb-1">Class</label>
+        <select id="class" name="class" required class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <option value="">Select Class</option>
+          <option value="1-3">1 to 3</option>
+          <option value="4-6">4 to 6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9-10">9 to 10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+      </div>
+
+      <!-- Subjects -->
+      <div>
+        <label for="subjects" class="block font-medium text-gray-700 mb-1">Subjects (for 9–12)</label>
+        <input type="text" id="subjects" name="subjects" placeholder="Maths, Physics etc" class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <!-- Address -->
+      <div>
+        <label for="address" class="block font-medium text-gray-700 mb-1">Address</label>
+        <textarea id="address" name="address" required rows="3" class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+
+      <!-- Submit -->
+      <div class="text-center">
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition font-semibold">Submit</button>
+      </div>
+    </form>
+  </section>
+  <!-- ✅ Footer -->
+  <footer class="bg-gray-100 py-6 mt-12 text-center text-sm text-gray-600">
+    &copy; 2025 Study Point. All rights reserved.
+  </footer>
+</body>
+</html>
